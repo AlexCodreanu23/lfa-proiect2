@@ -3,8 +3,6 @@ def verify(word, symbol):
         return False
     elif not word and 'l' in grammar[symbol]:
         return True
-    elif not word and symbol == 'S':
-        return True
     else:
         for i in grammar[symbol]:
             if isinstance(i, tuple):
